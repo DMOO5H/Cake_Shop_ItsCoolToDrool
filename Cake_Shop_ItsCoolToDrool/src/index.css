@@ -1,0 +1,56 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Georgia', serif;
+}
+
+body {
+  background-color: #4FBFB3;
+  color: #5c3a2e;
+}
+
+.header {
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.logo {
+  max-width: 420px;
+}
+
+.hero {
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.hero h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+.cta {
+  padding: 0.75rem 2rem;
+  font-size: 1rem;
+  border: none;
+  background-color: #d2a18f;
+  color: white;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.cta:hover {
+  background-color: #b98473;
+}
+
+.footer {
+  text-align: center;
+  padding: 2rem;
+  font-size: 0.9rem;
+}
