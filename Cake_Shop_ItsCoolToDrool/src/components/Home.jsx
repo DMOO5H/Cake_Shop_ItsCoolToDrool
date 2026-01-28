@@ -1,13 +1,15 @@
-import Header from "./Header";
-import Hero from "./Hero";
-import Footer from "./Footer";
+import Navbar from "./Navbar";
+import HeroSection from "./HeroSection";
+import FeaturesSection from "./FeaturesSection";
+import FooterSection from "./FooterSection";
 
 function Home() {
   return (
     <div className="page">
-      <Header />
-      <Hero />
-      <Footer />
+      <Navbar />
+      <HeroSection />
+      <FeaturesSection />
+      <FooterSection />
     </div>
   );
 }
