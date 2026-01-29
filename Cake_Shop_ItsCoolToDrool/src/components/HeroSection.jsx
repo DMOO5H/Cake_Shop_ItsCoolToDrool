@@ -17,10 +17,10 @@ function HeroSection() {
             className="flex flex-col justify-center space-y-8 relative z-10"
           >
             <div>
-              <p className="text-gray-600 text-lg md:text-xl font-medium italic mb-2">
+              <p className="text-gray-600 text-lg md:text-xl font-medium italic mb-4">
                 Sweeten Your Day with Our
               </p>
-              <h1 className="text-5xl md:text-6xl font-serif font-bold text-rose-700 leading-tight tracking-wider">
+              <h1 className="text-5xl md:text-7xl font-serif font-bold text-rose-800 leading-tight tracking-widest">
                 IRRESISTIBLE
                 <br />
                 CAKES

@@ -13,7 +13,7 @@ function FeaturesSection() {
     {
       id: 2,
       title: 'Custom Orders',
-      description: "Get your cake your way – perfectly personalized to your ste.",
+      description: "Get your cake your way – perfectly personalized to your style.",
       icon: '🎂',
     },
     {
