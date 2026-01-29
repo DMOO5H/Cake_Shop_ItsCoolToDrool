@@ -32,22 +32,22 @@ function FeaturesSection() {
   const [openSrc, setOpenSrc] = useState(null);
 
   return (
-    <section className="bg-gradient-to-br from-pink-100 via-pink-50 to-white py-20 px-4 md:px-8">
+    <section className="bg-gradient-to-br from-pink-100 via-pink-50 to-pink-50 py-24 px-6 md:px-10">
       <div className="max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
           {features.map((feature, index) => (
             <motion.div
               key={feature.id}
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: index * 0.2 }}
-              className="text-center p-8 bg-white/40 rounded-lg hover:bg-white/60 transition-all duration-300 border border-pink-200/30"
+              className="text-center p-10 bg-white/50 rounded-2xl hover:bg-white/70 transition-all duration-300 border-2 border-pink-200/40 shadow-md"
             >
-              <div className="text-6xl mb-4">{feature.icon}</div>
-              <h3 className="text-2xl font-bold text-gray-800 mb-3">
+              <div className="text-8xl mb-6">{feature.icon}</div>
+              <h3 className="text-2xl md:text-3xl font-bold text-gray-800 mb-4">
                 {feature.title}
               </h3>
-              <p className="text-gray-700 leading-relaxed text-base">
+              <p className="text-gray-700 leading-relaxed text-base md:text-lg">
                 {feature.description}
               </p>
             </motion.div>
@@ -55,9 +55,9 @@ function FeaturesSection() {
         </div>
 
         {/* Cake gallery using WhatsApp images from assets */}
-        <div className="mt-12">
-          <h2 className="text-2xl md:text-3xl font-semibold text-gray-800 mb-6 text-center">Our Cakes</h2>
-          <div className="grid grid-cols-2 md:grid-cols-5 gap-4">
+        <div className="mt-20">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-10 text-center">Our Cakes</h2>
+          <div className="grid grid-cols-2 md:grid-cols-5 gap-6">
             {galleryImages.map((src, idx) => (
               <button
                 key={idx}

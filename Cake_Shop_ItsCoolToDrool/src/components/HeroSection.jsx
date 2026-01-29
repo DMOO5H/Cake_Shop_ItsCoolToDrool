@@ -2,13 +2,13 @@ import { motion } from 'framer-motion';
 
 function HeroSection() {
   return (
-    <section className="bg-gradient-to-br from-pink-100 via-pink-50 to-white py-20 px-4 md:px-8 relative overflow-hidden">
+    <section className="bg-gradient-to-br from-pink-100 via-pink-50 to-pink-50 py-24 px-6 md:px-10 relative overflow-hidden">
       {/* Decorative background elements */}
-      <div className="absolute top-10 right-10 w-40 h-40 bg-pink-200 rounded-full blur-3xl opacity-20"></div>
-      <div className="absolute bottom-10 left-10 w-40 h-40 bg-rose-200 rounded-full blur-3xl opacity-20"></div>
+      <div className="absolute top-12 right-20 w-56 h-56 bg-pink-200 rounded-full blur-3xl opacity-15"></div>
+      <div className="absolute bottom-0 left-0 w-80 h-80 bg-rose-100 rounded-full blur-3xl opacity-20"></div>
 
       <div className="max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
           {/* Left Content */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
@@ -17,24 +17,24 @@ function HeroSection() {
             className="flex flex-col justify-center space-y-8 relative z-10"
           >
             <div>
-              <p className="text-gray-600 text-lg md:text-xl font-medium italic mb-4">
+              <p className="text-amber-800 text-xl md:text-2xl font-medium italic mb-6">
                 Sweeten Your Day with Our
               </p>
-              <h1 className="text-5xl md:text-7xl font-serif font-bold text-rose-800 leading-tight tracking-widest">
+              <h1 className="text-6xl md:text-8xl font-serif font-bold text-rose-700 leading-tight tracking-wider">
                 IRRESISTIBLE
                 <br />
                 CAKES
               </h1>
             </div>
 
-            <p className="text-gray-700 text-base md:text-lg max-w-md">
+            <p className="text-gray-600 text-lg md:text-xl max-w-xl leading-relaxed">
               Discover the most delicious, custom-made cakes for every occasion!
             </p>
 
             <motion.button
-              whileHover={{ scale: 1.05 }}
+              whileHover={{ scale: 1.08 }}
               whileTap={{ scale: 0.95 }}
-              className="bg-rose-400 text-white px-8 py-3 rounded-md font-semibold hover:bg-rose-500 transition-all duration-200 w-fit shadow-lg border border-rose-200"
+              className="bg-rose-500 text-white px-10 py-4 rounded-lg font-semibold hover:bg-rose-600 transition-all duration-300 w-fit shadow-xl border-2 border-rose-300"
             >
               View Cakes
             </motion.button>
