@@ -1,11 +1,10 @@
 import { useState } from 'react';
+import logoHorizontal from '../assets/logo-horizontal.png';
 
 function Navbar() {
     const [isOpen, setIsOpen] = useState(false);
 
-    const toggleMenu = () => {
-        setIsOpen(!isOpen);
-    };
+    const toggleMenu = () => setIsOpen(!isOpen);
 
     const menuItems = [
         { name: 'Home', href: '#home' },
@@ -18,13 +17,13 @@ function Navbar() {
             <nav className="bg-teal-500 shadow-lg sticky top-0 z-50">
                 <div className="max-w-7xl mx-auto px-6 sm:px-8 lg:px-10">
                     <div className="flex justify-between items-center h-24">
-                        {/* Logo/Brand with styled text */}
-                        <div className="flex-shrink-0 flex items-center">
-                            <img src={new URL('../assets/logo-horizontal.png', import.meta.url).href} alt="It's Cool to Drool logo" className="h-12 md:h-14 object-contain" />
+                        {/* Logo */}
+                        <div className="flex-shrink-0">
+                            <img src={logoHorizontal} alt="It's Cool to Drool logo" className=" object-contain" height={475} width={475}/>
                         </div>
                     
                         {/* Desktop Menu */}
-                        <div className="hidden md:flex items-center space-x-10">
+                        <div className="flex flex-row items-center justify-between">
                             {menuItems.map((item) => (
                                 <a
                                     key={item.name}
