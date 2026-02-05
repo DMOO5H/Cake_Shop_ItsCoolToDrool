@@ -23,7 +23,7 @@ function Navbar() {
                         </div>
                     
                         {/* Desktop Menu */}
-                        <div className="flex flex-row items-center justify-between">
+                        <div className="flex flex-row items-center justify-between gap-20">
                             {menuItems.map((item) => (
                                 <a
                                     key={item.name}
@@ -36,7 +36,7 @@ function Navbar() {
                         </div>
 
                         {/* CTA Button - Desktop */}
-                        <div className="hidden md:flex items-center space-x-4">
+                        <div className="flex flex-row items-center justify-between">
                             <button className="bg-rose-400 text-white px-8 py-3 rounded-lg font-semibold hover:shadow-xl hover:bg-rose-500 transition-all duration-300 border-2 border-rose-300">
                                 Place Order
                             </button>

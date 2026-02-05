@@ -1,3 +1,4 @@
+import { IconCake, IconToolsKitchen2, IconCheck  } from '@tabler/icons-react';
 import { motion } from 'framer-motion';
 import { useState } from 'react';
 import Lightbox from './Lightbox';
@@ -8,19 +9,19 @@ function FeaturesSection() {
       id: 1,
       title: 'Fresh Ingredients',
       description: "We use only the finest, freshest ingredients in our cakes.",
-      icon: '🥄',
+      icon: <IconToolsKitchen2 stroke={2} size={32}/>,
     },
     {
       id: 2,
       title: 'Custom Orders',
       description: "Get your cake your way – perfectly personalized to your style.",
-      icon: '🎂',
+      icon: <IconCake stroke={2} size={32} />,
     },
     {
       id: 3,
       title: 'Reliable Service',
       description: "Easy online ordering and timely, trustworthy delivery.",
-      icon: '✓',
+      icon: <IconCheck stroke={2} size={32}/>,
     },
   ];
 
@@ -41,7 +42,7 @@ function FeaturesSection() {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: index * 0.2 }}
-              className="text-center p-10 bg-white/50 rounded-2xl hover:bg-white/70 transition-all duration-300 border-2 border-pink-200/40 shadow-md"
+              className="items-center text-center p-10 bg-white/50 rounded-2xl hover:bg-white/70 transition-all duration-300 border-2 border-pink-200/40 shadow-md"
             >
               <div className="text-8xl mb-6">{feature.icon}</div>
               <h3 className="text-2xl md:text-3xl font-bold text-gray-800 mb-4">
