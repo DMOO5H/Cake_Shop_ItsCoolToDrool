@@ -21,7 +21,7 @@ function FeaturesSection() {
       id: 3,
       title: 'Reliable Service',
       description: "Easy online ordering and timely, trustworthy delivery.",
-      icon: <IconCheck stroke={2} size={32}/>,
+      icon: <IconCheck stroke={2} size={32} />,
     },
   ];
 
@@ -33,19 +33,19 @@ function FeaturesSection() {
   const [openSrc, setOpenSrc] = useState(null);
 
   return (
-    <section className="bg-gradient-to-br from-pink-100 via-pink-50 to-pink-50 py-24 px-6 md:px-10">
-      <div className="max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
+    <section className="flex flex-col items-center justify-center bg-gradient-to-br from-pink-100 via-pink-50 to-pink-50 py-24 px-6 md:px-10">
+      <div className="max-w-7xl mx-auto my-auto">
+        <div className="flex flex-row items-center justify-center gap-20 h-100">
           {features.map((feature, index) => (
             <motion.div
               key={feature.id}
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.6, delay: index * 0.2 }}
-              className="items-center text-center p-10 bg-white/50 rounded-2xl hover:bg-white/70 transition-all duration-300 border-2 border-pink-200/40 shadow-md"
+              className="flex flex-col items-center justify-center h-40 w-120 text-center bg-white/50 rounded-2xl hover:bg-white/70 transition-all duration-300 border-2 border-pink-200/40 shadow-md"
             >
               <div className="text-8xl mb-6">{feature.icon}</div>
-              <h3 className="text-2xl md:text-3xl font-bold text-gray-800 mb-4">
+              <h3 className="text-4xl md:text-3xl font-bold text-gray-800 mb-4">
                 {feature.title}
               </h3>
               <p className="text-gray-700 leading-relaxed text-base md:text-lg">
@@ -56,9 +56,9 @@ function FeaturesSection() {
         </div>
 
         {/* Cake gallery using WhatsApp images from assets */}
-        <div className="mt-20">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-10 text-center">Our Cakes</h2>
-          <div className="grid grid-cols-2 md:grid-cols-5 gap-6">
+        <div className="flex flex-col items-center justify-center m-32 gap-12">
+          <h1 className="flex flex-row font-bold text-gray-800 text-center">Our Cakes</h1>
+          <div className="flex flex-row items center justify-center gap-6">
             {galleryImages.map((src, idx) => (
               <button
                 key={idx}
@@ -68,7 +68,7 @@ function FeaturesSection() {
                 <img
                   src={src}
                   alt={`cake-${idx}`}
-                  className="object-cover w-full h-36 md:h-44 transform hover:scale-105 transition-transform duration-300"
+                  className="object-cover w-full h-44 md:h-52 transform hover:scale-105 transition-transform duration-300"
                 />
               </button>
             ))}
