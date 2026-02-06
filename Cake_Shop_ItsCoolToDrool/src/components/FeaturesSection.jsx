@@ -33,7 +33,7 @@ function FeaturesSection() {
   const [openSrc, setOpenSrc] = useState(null);
 
   return (
-    <section className="flex flex-col items-center justify-center bg-gradient-to-br from-pink-100 via-pink-50 to-pink-50 py-32 px-6 lg:px-10">
+    <section className="flex flex-col items-center justify-center bg-linear-to-br from-pink-100 via-pink-50 to-pink-50 py-32 px-6 lg:px-10">
       <div className="max-w-7xl mx-auto my-auto">
         <div className="flex flex-row items-center justify-center gap-20 h-100">
           {features.map((feature, index) => (

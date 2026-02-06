@@ -1,8 +1,7 @@
 import { motion } from 'framer-motion';
-
 function HeroSection() {
   return (
-    <section className="bg-gradient-to-br from-pink-100 via-pink-50 to-pink-50 py-24 px-6 md:px-10 relative overflow-hidden">
+    <section className="flex flex-col bg-linear-to-br from-pink-100 via-pink-50 to-pink-50 py-24 px-6 md:px-10 relative overflow-hidden">
       {/* Decorative background elements */}
       <div className="absolute top-12 right-20 w-56 h-56 bg-pink-200 rounded-full blur-3xl opacity-15"></div>
       <div className="absolute bottom-0 left-0 w-80 h-80 bg-rose-100 rounded-full blur-3xl opacity-20"></div>
@@ -47,9 +46,9 @@ function HeroSection() {
             transition={{ duration: 0.8 }}
             className="flex justify-center items-center relative z-10"
           >
-            <div className="relative w-full max-w-md h-96">
+            <div className="relative max-h-screen max-w-screen">
               <img
-                src={new URL('../assets/ChatGPT%20Image%20Jan%2022%2C%202026%2C%2007_25_41%20PM.png', import.meta.url).href}
+                src={new URL('/Users/apple/Documents/Codes/Cake_Shop_ItsCoolToDrool/Cake_Shop_ItsCoolToDrool/src/assets/WhatsApp Image 2026-02-06 at 11.07.16 AM.jpeg', import.meta.url).href}
                 alt="Delicious cakes"
                 className="rounded-2xl shadow-2xl object-cover w-full h-full"
               />
