@@ -35,7 +35,7 @@ function FeaturesSection() {
   return (
     <section className="flex flex-col items-center justify-center bg-linear-to-br from-pink-100 via-pink-50 to-pink-50 py-32 px-6 lg:px-10">
       <div className="max-w-7xl mx-auto my-auto">
-        <div className="flex flex-row items-center justify-center gap-20 h-100">
+        <div className="flex flex-row items-center justify-center gap-20 h-100 py-20">
           {features.map((feature, index) => (
             <motion.div
               key={feature.id}
@@ -57,7 +57,7 @@ function FeaturesSection() {
 
         {/* Cake gallery using WhatsApp images from assets */}
         <div className="flex flex-col items-center justify-center m-44 gap-12">
-          <h1 className="flex flex-row font-bold text-gray-800 text-center">Our Cakes</h1>
+          <h1 className="flex flex-row font-bold text-gray-800 text-center text-50px">Our Cakes</h1>
           <div className="flex flex-row items center justify-center gap-6">
             {galleryImages.map((src, idx) => (
               <button

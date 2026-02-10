@@ -2,10 +2,6 @@ import { motion } from 'framer-motion';
 function HeroSection() {
   return (
     <section className="max-h-full max-w-full bg-linear-to-br from-pink-100 via-pink-50 to-pink-50 relative overflow-hidden">
-      {/* Decorative background elements */}
-      <div className="absolute top-12 right-20 w-56 h-56 bg-pink-200 rounded-full blur-3xl opacity-15"></div>
-      <div className="absolute bottom-0 left-0 w-80 h-80 bg-rose-100 rounded-full blur-3xl opacity-20"></div>
-
       <div className="flex flex-row max-w-screen max-h-screen">
         <div className="">
           {/* Left Image - Cake Display (hero image from assets) */}

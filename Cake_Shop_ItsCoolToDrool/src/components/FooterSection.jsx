@@ -3,24 +3,18 @@ import { motion } from 'framer-motion';
 
 function FooterSection() {
   return (
-    <footer className="bg-teal-500 py-12 px-6 md:px-10">
-      <div className="max-w-7xl mx-auto">
-        <div className="flex flex-col md:flex-row justify-between items-center gap-12">
+    <footer className="bg-teal-500">
+      <div className="">
+        <div className="flex flex-row justify-between items-center h-18 px-10">
           {/* Left - Logo and Copyright */}
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.6 }}
-            className="flex flex-col items-center md:items-start gap-2"
+            className="flex flex-col items-center"
           >
-            <span className="text-2xl md:text-3xl font-bold tracking-wider">
-              <span className="text-rose-500">IT'S</span>
-              <span className="text-white">COOL</span>
-              <span className="text-rose-500">TO</span>
-              <span className="text-white">DROOL</span>
-            </span>
             <p className="text-white text-sm md:text-base">
-              © 2024 It's Cool to Drool. All rights reserved.
+              © 2026 It's Cool to Drool. All rights reserved.
             </p>
           </motion.div>
 
