@@ -1,14 +1,30 @@
 import { motion } from 'framer-motion';
 function HeroSection() {
   return (
-    <section className="flex flex-col bg-linear-to-br from-pink-100 via-pink-50 to-pink-50 py-24 px-6 md:px-10 relative overflow-hidden">
+    <section className="max-h-full max-w-full bg-linear-to-br from-pink-100 via-pink-50 to-pink-50 relative overflow-hidden">
       {/* Decorative background elements */}
       <div className="absolute top-12 right-20 w-56 h-56 bg-pink-200 rounded-full blur-3xl opacity-15"></div>
       <div className="absolute bottom-0 left-0 w-80 h-80 bg-rose-100 rounded-full blur-3xl opacity-20"></div>
 
-      <div className="max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
-          {/* Left Content */}
+      <div className="flex flex-row max-w-screen max-h-screen">
+        <div className="">
+          {/* Left Image - Cake Display (hero image from assets) */}
+          <motion.div
+            initial={{ opacity: 0, x: 50 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8 }}
+            className="flex flex-col justify-center items-center"
+          >
+            <div className="relative max-h-screen max-w-screen">
+              <img
+                src={new URL('/Users/apple/Documents/Codes/Cake_Shop_ItsCoolToDrool/Cake_Shop_ItsCoolToDrool/src/assets/Background.jpeg', import.meta.url).href}
+                alt="Delicious cakes"
+                className="rounded-2xl shadow-2xl object-cover w-full h-full"
+              />
+            </div>
+          </motion.div>
+
+          {/* Right Content */}
           <motion.div
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
@@ -37,23 +53,6 @@ function HeroSection() {
             >
               View Cakes
             </motion.button>
-          </motion.div>
-
-          {/* Right Image - Cake Display (hero image from assets) */}
-          <motion.div
-            initial={{ opacity: 0, x: 50 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8 }}
-            className="flex justify-center items-center relative z-10"
-          >
-            <div className="relative max-h-screen max-w-screen">
-              <img
-                src={new URL('/Users/apple/Documents/Codes/Cake_Shop_ItsCoolToDrool/Cake_Shop_ItsCoolToDrool/src/assets/WhatsApp Image 2026-02-06 at 11.07.16 AM.jpeg', import.meta.url).href}
-                alt="Delicious cakes"
-                className="rounded-2xl shadow-2xl object-cover w-full h-full"
-              />
-              <div className="absolute -bottom-6 left-1/2 -translate-x-1/2 w-11/12 h-8 bg-gradient-to-r from-rose-300 via-rose-200 to-rose-400 rounded-lg opacity-80 border border-rose-200"></div>
-            </div>
           </motion.div>
         </div>
       </div>
